@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading">Weather</h1>
+    </div>
+    <div id="container">
+        <div id="left">
+            <form>
+                <input id="entered-city" type="text" placeholder="Enter City Name"><br>
+            </form>
+            <button id="search-btn">Search</button>
+            <div class="option-line">
+                <hr>
+                <p id="or">or</p>
+                <hr>
+            </div>
+            <button id="location-btn">Use Current Location</button>
+        </div>
+        <div id="right">
+            <p class="p-text" id="city-name"></p>
+            <p class="p-text" id="today-date"></p>
+            <div id="today">
+                <img id="img-today" src="" alt="Icon">
+                <p class="today-all" id="today-temp"></p>
+                <p class="today-all" id="today-wind"></p>
+                <p class="today-all" id="today-hum"></p>
+            </div>
+            <p class="p-text">4-Day Forecast</p>
+            <div id="four">
+                <div class="fourdays">
+                    <p class="other-all" id="1-date"></p>
+                    <img class="img-other" id="1-img" src="" alt="Icon">
+                    <p class="other-all" id="1-temp"></p>
+                    <p class="other-all" id="1-wind"></p>
+                    <p class="other-all" id="1-hum"></p>
+                </div>
+                <div class="fourdays">
+                    <p class="other-all" id="2-date"></p>
+                    <img class="img-other" id="2-img" src="" alt="Icon">
+                    <p class="other-all" id="2-temp"></p>
+                    <p class="other-all" id="2-wind"></p>
+                    <p class="other-all" id="2-hum"></p>
+                </div>
+                <div class="fourdays">
+                    <p class="other-all"id="3-date"></p>
+                    <img class="img-other" id="3-img" src="" alt="Icon">
+                    <p class="other-all" id="3-temp"></p>
+                    <p class="other-all" id="3-wind"></p>
+                    <p class="other-all" id="3-hum"></p>
+                </div>
+                <div class="fourdays">
+                    <p class="other-all" id="4-date"></p>
+                    <img class="img-other" id="4-img" src="" alt="Icon">
+                    <p class="other-all" id="4-temp"></p>
+                    <p class="other-all" id="4-wind"></p>
+                    <p class="other-all" id="4-hum"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
