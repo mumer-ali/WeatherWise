@@ -72,7 +72,7 @@ const parseCurrent = (data) => {
     }
     document.querySelector("#city-name").innerText = data["location"]["name"];
     document.querySelector("#today-date").innerText = data["location"]["localtime"].slice(0, 10);
-    document.querySelector("#img-today").setAttribute("src", `weather/day/${icon}.png`);
+    document.querySelector("#img-today").setAttribute("src", `icons/${icon}.png`);
     document.querySelector("#img-today").style.visibility = "visible";
     document.querySelector("#today-temp").innerText = `Temperature: ${data["current"]["temp_c"]} ${degree}C`;
     document.querySelector("#today-wind").innerText = `Wind: ${data["current"]["wind_kph"]} km/h`;
@@ -93,7 +93,7 @@ const parseFore = (data) => {
                 break;
             }
         }
-        document.getElementById(`${i}-img`.toString()).setAttribute("src", `weather/day/${icon}.png`);
+        document.getElementById(`${i}-img`.toString()).setAttribute("src", `icons/${icon}.png`);
         document.getElementById(`${i}-img`.toString()).style.visibility = "visible";
     }
 }
