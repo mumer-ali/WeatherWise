@@ -289,4 +289,5 @@ const codes =
 		"icon" : 395
 	}
 ]
+
 export default codes;
